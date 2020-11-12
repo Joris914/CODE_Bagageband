@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="CODE_Bagageband.App">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CODE_Bagageband.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CODE_Bagageband.Model.Aankomsthal">
+    <Position X="6.5" Y="10.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAIAAAACAAAIAAAAAAAAAAAAAAAAAQAAACAgAAAA=</HashCode>
+      <FileName>Model\Aankomsthal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Bagagebanden" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CODE_Bagageband.Model.Bagageband">
+    <Position X="3" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABgAAAAAAIAAAAAgAIAgAgAA=</HashCode>
+      <FileName>Model\Bagageband.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_huidigeVluchtTimer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CODE_Bagageband.Model.Vlucht">
+    <Position X="11" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAABAAgAAAAAAAAAEAAAAAABAAAg=</HashCode>
+      <FileName>Model\Vlucht.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CODE_Bagageband.ViewModel.BagagebandViewModel">
+    <Position X="6.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQAAAAAACAAAIAAAAABgAAAAAAAAAAAAAAIABAAAI=</HashCode>
+      <FileName>Presentation\ViewModel\BagagebandViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CODE_Bagageband.ViewModel.MainViewModel">
+    <Position X="6.25" Y="4.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACgAAAAAAAAYAgAABAAAEABABQJAAAAAAAAA=</HashCode>
+      <FileName>Presentation\ViewModel\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_aankomsthal" />
+      <Property Name="Band1" />
+      <Property Name="Band2" />
+      <Property Name="Band3" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="WachtendeVluchten" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CODE_Bagageband.ViewModel.ViewModelLocator">
+    <Position X="11.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAA=</HashCode>
+      <FileName>Presentation\ViewModel\ViewModelLocator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Main" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CODE_Bagageband.ViewModel.VluchtViewModel">
+    <Position X="3.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAACAAAJAAAAAAgAAAAAAAAAEAAAAAABAAAA=</HashCode>
+      <FileName>Presentation\ViewModel\VluchtViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CODE_Bagageband.Properties.Resources">
+    <Position X="14.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CODE_Bagageband.Properties.Settings">
+    <Position X="17" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Timer">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

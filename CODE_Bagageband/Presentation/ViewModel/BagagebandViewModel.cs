@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CODE_Bagageband.ViewModel
 {
-    public class BagagebandViewModel : ViewModelBase
+    public class BagagebandViewModel : ViewModelBase, IObserver<Bagageband>
     {
         private string _vluchtVertrokkenVanuit;
         public string VluchtVertrokkenVanuit
@@ -33,14 +33,25 @@ namespace CODE_Bagageband.ViewModel
 
         public BagagebandViewModel(Bagageband band)
         {
-            Update(band);
+            band.Subscribe(this);
+            OnNext(band);
         }
 
-        public void Update(Bagageband value)
-        {
+		public void OnNext(Bagageband value)
+		{
             VluchtVertrokkenVanuit = value.VluchtVertrokkenVanuit;
             AantalKoffers = value.AantalKoffers;
             Naam = value.Naam;
         }
-    }
+
+		public void OnError(Exception error)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void OnCompleted()
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

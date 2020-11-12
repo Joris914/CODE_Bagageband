@@ -80,6 +80,7 @@
     </ApplicationDefinition>
     <Compile Include="Model\Aankomsthal.cs" />
     <Compile Include="Model\Bagageband.cs" />
+    <Compile Include="Model\Observable.cs" />
     <Compile Include="Model\Vlucht.cs" />
     <Compile Include="Presentation\ViewModel\BagagebandViewModel.cs" />
     <Compile Include="Presentation\ViewModel\MainViewModel.cs" />
@@ -116,6 +117,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="AKD.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
